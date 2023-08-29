@@ -1,0 +1,334 @@
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-first {
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-content: flex-start;
+  width: 200px;
+  min-width: 420px;
+  height: 300px;
+  padding: 0px 0px 0px 20px;
+  background-color: white;
+  border-top: 2px solid white;
+  cursor: pointer
+}
+
+.red-item,
+.black-item,
+.zero-item {
+  box-sizing: border-box;
+  border: none;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  width: 64px;
+  min-width: 50px;
+  font-size: 18px;
+  color: white;
+  transition: none;
+  height: 76px;
+}
+
+#zero {
+  font-size: 35px;
+  text-align: center;
+  margin: -20px;
+}
+
+.zero-item {
+  background-color: green;
+  border-bottom: 0px solid black;
+  padding-top: 116px;
+  padding-bottom: 111px;
+  border-bottom-left-radius: 85px;
+  border-top-left-radius: 85px;
+  width: 81px;
+}
+
+.red-item {
+  background-color: red;
+}
+
+.black-item {
+  background-color: black;
+}
+
+.column-item {
+  border: solid 1px;
+  background-color: white;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  text-align: center;
+  width: 50px;
+  min-width: 50px;
+  font-size: 21px;
+  color: black;
+}
+
+.container-second {
+  display: flex;
+  background-color: white;
+  width: auto;
+  min-width: 420px;
+  height: 70px;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding: 0px 0px 0px 72px;
+  cursor: pointer
+}
+
+.doz-item {
+  flex-basis: 194px;
+  border: 2px solid black;
+  background-color: white;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  height: 22px;
+  font-size: 17px;
+  color: black;
+  transform: translate(28px, 0px);
+  padding-left: 59px;
+}
+
+.container-third {
+  display: flex;
+  background-color: white;
+  width: auto;
+  min-width: 420px;
+  height: 141px;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding: 0px 0px 0px 72px;
+  transform: translate(28px, -18px);
+  cursor: pointer
+}
+
+.outside-section {
+  flex-basis: 107px;
+  border: 2px solid black;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 27px;
+  text-align: center;
+  height: 16px;
+  font-size: 19px;
+  color: black;
+  padding-right: 17.5px;
+  cursor: pointer
+}
+
+.rectangle-red {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid black;
+  transform: rotate(45deg);
+  cursor: pointer
+}
+
+.rectangle-black {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: solid black;
+  transform: rotate(45deg);
+  cursor: pointer
+}
+
+.chip {
+  display: inline-block;
+
+}
+
+.chip-value {
+  font-size: 0px
+}
+
+button {
+  border: none;
+  border-radius: 69px;
+  cursor: pointer;
+
+}
+
+.chips {
+  transform: translate(600px, 0px);
+  cursor: pointer
+}
+
+.buttons {
+  float: top;
+  float: inline-start;
+  padding-top: 0px;
+  margin-left: 99px;
+  margin-bottom: 19px;
+  margin-top: -49px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.placed-chip {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 30px;
+  font-weight: bold;
+  color: #333333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: black;
+}
+@media (max-width: 768px) {
+
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+    border-top: 2px solid white;
+  }
+
+  .primary {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .secondary {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+  }
+
+  .tertiary {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .red-item,
+  .black-item,
+  .zero-item {
+    box-sizing: border-box;
+    border: none;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+    min-width: 40px;
+    font-size: 14px;
+    color: white;
+    transition: none;
+    height: 60px;
+  }
+
+  #zero {
+    font-size: 25px;
+    text-align: center;
+    margin: -10px;
+  }
+
+  .zero-item {
+    background-color: green;
+    border-bottom: 0px solid black;
+    padding: 50px;
+    border-bottom-left-radius: 42.5px;
+    border-top-left-radius: 42.5px;
+    width: 51px;
+  }
+
+  .red-item {
+    background-color: red;
+  }
+
+  .black-item {
+    background-color: black;
+  }
+
+  .column-item {
+    border: solid 1px;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    width: 30px;
+    min-width: 30px;
+    font-size: 16px;
+    color: black;
+  }
+
+  .doz-item {
+    flex-basis: 150px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    transform: translate(10px, 0px);
+    padding-left: 30px;
+  }
+
+  .outside-section {
+    flex-basis: 100px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    padding-right: 10px;
+  }
+
+  .chip {
+    display: inline-block;
+  }
+
+  .chip-value {
+    font-size: 0px;
+  }
+
+  button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+}
